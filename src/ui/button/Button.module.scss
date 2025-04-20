@@ -1,0 +1,114 @@
+@use "../../styles/variables" as *;
+@use "../GlobalUi.scss" as *;
+
+.button {
+  cursor: pointer;
+  &.primary {
+    background-color: $background;
+    color: $text-primary;
+    &:hover {
+      background-color: $background-primary-hover;
+    }
+    &:focus {
+      background-color: $background-focus;
+    }
+    &:disabled {
+      background-color: $background-disabled;
+      color: $text-disabled;
+      cursor: not-allowed;
+    }
+  }
+  &.secondary {
+    background-color: $background;
+    color: $text-primary;
+    &:hover {
+      background-color: $background-secondary-hover;
+      color: $text-secondary;
+    }
+    &:focus {
+      background-color: $background-focus;
+    }
+    &:disabled {
+      background-color: $background-disabled;
+      color: $text-disabled;
+      cursor: not-allowed;
+    }
+  }
+  &.withTextIcon,
+  &.withIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &.sm {
+    font-size: 12px;
+    font-weight: normal;
+    height: 28px;
+    padding: 0 12px;
+    min-width: 90px;
+    &.withTextIcon {
+      gap: 6px;
+      min-width: 108px;
+    }
+    &.withIcon {
+      padding: 0;
+      width: 28px;
+      min-width: unset;
+    }
+  }
+  &.md {
+    font-size: 16px;
+    font-weight: normal;
+    height: 36px;
+    padding: 0 20px;
+    min-width: 126px;
+    &.withTextIcon {
+      gap: 8px;
+      min-width: 150px;
+    }
+    &.withIcon {
+      padding: 0;
+      width: 36px;
+      min-width: unset;
+    }
+  }
+  &.lg {
+    font-size: 20px;
+    font-weight: normal;
+    height: 44px;
+    padding: 0 24px;
+    min-width: 155px;
+    &.withTextIcon {
+      gap: 10px;
+      min-width: 185px;
+    }
+    &.withIcon {
+      padding: 0;
+      width: 44px;
+      min-width: unset;
+    }
+  }
+  &.xl {
+    font-size: 24px;
+    font-weight: normal;
+    height: 54px;
+    padding: 0 36px;
+    min-width: 199px;
+    &.withTextIcon {
+      gap: 16px;
+      min-width: 241px;
+    }
+    &.withIcon {
+      padding: 0;
+      width: 54px;
+      min-width: unset;
+    }
+  }
+}
+.disabled {
+  &.borderWrapper {
+    &::after {
+      background: $text-disabled;
+    }
+  }
+}

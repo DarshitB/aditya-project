@@ -1,0 +1,62 @@
+// Colors Palette
+
+// ==========================
+// 🎨 PRIMARY COLORS (CMY)
+// ==========================
+$color-magenta: #ff00ff;
+$color-cyan: #00ffff;
+$color-yellow: #ffd700;
+
+// ==========================
+// 🎨 SECONDARY COLORS (RGB)
+// ==========================
+$color-green: #00d700;
+$color-red: #ff0000;
+$color-electric-blue: #0077ff;
+
+// ==========================
+// 🔶 ADDITIONAL COLORS
+// ==========================
+$color-orange: #ff6600;
+$color-desat-orange: #ff8800;
+
+// ==========================
+// ⚪ NEGATIVE SPACE - LIGHTS
+// ==========================
+$color-white: #ffffff;
+$color-light-1: #f3f3f3;
+$color-light-2: #e9e9e9;
+
+// ==========================
+// ⚫ NEGATIVE SPACE - DARKS
+// ==========================
+$color-dark-1: #090909;
+$color-dark-2: #191919;
+$color-dark-3: #262626;
+$color-dark-4: #333333;
+
+// ==========================
+// 🌫️ SHADOW COLORS
+// ==========================
+$color-shadow-1: #a1a1a1;
+$color-shadow-2: #949494;
+$color-shadow-3: #767676;
+$color-shadow-4: #4b4b4b;
+$color-shadow-5: #626262;
+
+// ==========================
+// 🧩 ALIASES (if needed)
+// ==========================
+// You can alias commonly reused roles like this:
+$primary: $color-dark-2;
+$secondary: $color-magenta;
+
+$background: $color-dark-2;
+$background-primary-hover: $color-shadow-4;
+$background-secondary-hover: $color-light-1;
+$background-focus: $color-shadow-2;
+$background-disabled: $color-dark-4;
+
+$text-primary: $color-light-1;
+$text-secondary: $color-dark-2;
+$text-disabled: $color-shadow-5;

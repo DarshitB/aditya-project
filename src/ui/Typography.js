@@ -1,5 +1,5 @@
-export const H1 = ({ children }) => (
-  <h1 className="">{children}</h1>
+export const H1 = ({ children, className = "" }) => (
+  <h1 className={`${className}`}>{children}</h1>
 );
 
 export const H2 = ({ children }) => (

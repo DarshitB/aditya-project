@@ -1,0 +1,8 @@
+@use "../../styles/variables" as *;
+
+.fonnt-name {
+  text-shadow: 2px 0 $color-white, -2px 0 $color-white, 0 2px $color-white,
+    0 -2px $color-white, 1px 1px $color-white, -1px -1px $color-white,
+    1px -1px $color-white, -1px 1px $color-white;
+  color: $text-secondary;
+}
