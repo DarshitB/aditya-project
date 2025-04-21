@@ -1,4 +1,4 @@
-// Colors Palette
+// COLORS PALETTE
 
 // ==========================
 // 🎨 PRIMARY COLORS (CMY)
@@ -45,11 +45,13 @@ $color-shadow-4: #4b4b4b;
 $color-shadow-5: #626262;
 
 // ==========================
-// 🧩 ALIASES (if needed)
+// 🧩 ALIASES
 // ==========================
 // You can alias commonly reused roles like this:
 $primary: $color-dark-2;
 $secondary: $color-magenta;
+
+$sidebar-background: $color-dark-3;
 
 $background: $color-dark-2;
 $background-primary-hover: $color-shadow-4;

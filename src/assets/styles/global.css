@@ -18,12 +18,23 @@
 
 body {
     margin: 0;
+    padding: 0;
     background-color: #151515;
     font-family: 'Pixeloid Sans', sans-serif;
     color: white;
+    box-sizing: border-box;
 }
 
-button {
+button,
+input {
+    font-family: 'Pixeloid Sans', sans-serif;
+}
+
+::placeholder {
+    font-family: 'Pixeloid Sans', sans-serif;
+}
+
+::-ms-input-placeholder {
     font-family: 'Pixeloid Sans', sans-serif;
 }
 

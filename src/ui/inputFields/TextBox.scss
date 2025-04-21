@@ -1,0 +1,141 @@
+@use "../../assets/styles/variables" as *;
+@use "../GlobalUi.scss" as *;
+
+.input {
+  background-color: transparent;
+  caret-color: $text-primary;
+  color: $text-primary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  &:hover {
+    background-color: $background-primary-hover;
+  }
+  &.sm {
+    height: 28px;
+    width: 166px;
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  &.md {
+    height: 36px;
+    padding: 6px 8px;
+    width: 240px;
+    font-size: 16px;
+  }
+  &.lg {
+    height: 44px;
+    width: 332px;
+    padding: 8px 10px;
+    font-size: 20px;
+  }
+  &.xl {
+    height: 54px;
+    width: 412px;
+    padding: 12px 16px;
+    font-size: 24px;
+  }
+  &::placeholder {
+    color: $color-shadow-1;
+    opacity: 1;
+  }
+  &::-ms-input-placeholder {
+    color: $color-shadow-1;
+  }
+  &.disabled {
+    background-color: $background-disabled;
+    cursor: not-allowed;
+    &::placeholder {
+      color: $color-shadow-4;
+      opacity: 1;
+    }
+    &::-ms-input-placeholder {
+      color: $color-shadow-4;
+    }
+  }
+}
+.iconLeft {
+  position: relative;
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+  .input {
+    &.sm {
+      padding: 6px 8px 6px 24px;
+      + .input-icon {
+        left: 8px;
+      }
+    }
+    &.md {
+      padding: 6px 8px 6px 32px;
+      + .input-icon {
+        left: 10px;
+      }
+    }
+    &.lg {
+      padding: 6px 8px 6px 40px;
+      + .input-icon {
+        left: 12px;
+      }
+    }
+    &.xl {
+      padding: 6px 8px 6px 50px;
+      + .input-icon {
+        left: 14px;
+      }
+    }
+  }
+  &.disabled {
+    .input-icon {
+      fill: $color-shadow-4;
+    }
+  }
+}
+.iconRight {
+  position: relative;
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+  .input {
+    &.sm {
+      padding: 6px 24px 6px 8px;
+      + .input-icon {
+        right: 8px;
+      }
+    }
+    &.md {
+      padding: 6px 32px 6px 8px;
+      + .input-icon {
+        right: 10px;
+      }
+    }
+    &.lg {
+      padding: 8px 40px 8px 10px;
+      + .input-icon {
+        right: 12px;
+      }
+    }
+    &.xl {
+      padding: 12px 50px 12px 16px;
+      + .input-icon {
+        right: 14px;
+      }
+    }
+  }
+  &.disabled {
+    .input-icon {
+      fill: $color-shadow-4;
+    }
+  }
+}

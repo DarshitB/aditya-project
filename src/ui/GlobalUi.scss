@@ -1,10 +1,10 @@
-@use "../styles/variables" as *;
+@use "../assets/styles/variables" as *;
 
 .borderWrapper {
   width: fit-content;
   height: fit-content;
   position: relative;
-
+  box-sizing: border-box;
   clip-path: polygon(
     0px calc(100% - 4px),
     2px calc(100% - 4px),
@@ -77,6 +77,7 @@
   }
   .borderInner {
     position: relative;
+    box-sizing: border-box;
     border: 2px solid transparent;
     clip-path: polygon(
       0px 0px,

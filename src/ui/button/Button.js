@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Button.module.scss";
+import "./Button.scss";
 
 const Button = ({
   children,
@@ -8,12 +8,10 @@ const Button = ({
   disabled = false,
   ...props
 }) => {
-  const classes = `${styles.button} ${styles.borderInner} ${styles[variant]} ${
-    styles[size]
-  } ${disabled ? styles.disabled : ""}`;
-  const prenetClasses = `${styles.borderWrapper} ${
-    disabled ? styles.disabled : ""
+  const classes = `button borderInner ${variant} ${size} ${
+    disabled ? "disabled" : ""
   }`;
+  const prenetClasses = `borderWrapper ${disabled ? "disabled" : ""}`;
   return (
     <div className={prenetClasses}>
       <button className={classes} disabled={disabled} {...props}>

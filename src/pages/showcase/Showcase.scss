@@ -1,4 +1,4 @@
-@use "../../styles/variables" as *;
+@use "../../assets/styles/variables" as *;
 
 .showcase-wrapper {
     margin-bottom: 111px;
@@ -7,18 +7,16 @@
     }
   .showcase-buttons {
     .showcase-table {
-      width: 100%;
-      max-width: 1000px;
       text-align: center;
       tr {
         td {
-          padding: 15px 0;
+          padding: 15px;
           div {
             margin: 0 auto;
           }
         }
         th {
-          padding: 15px 0;
+          padding: 15px;
           text-align: left;
         }
       }

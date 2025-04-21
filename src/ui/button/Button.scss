@@ -1,4 +1,4 @@
-@use "../../styles/variables" as *;
+@use "../../assets/styles/variables" as *;
 @use "../GlobalUi.scss" as *;
 
 .button {
@@ -104,6 +104,14 @@
       min-width: unset;
     }
   }
+  &.active {
+    background-color: $background-focus;
+  }
+}
+a.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .disabled {
   &.borderWrapper {

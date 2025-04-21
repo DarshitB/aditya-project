@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Button.module.scss";
+import "./Button.scss";
 import { DownloadIcon } from "../icons/Icons";
 
 const ButtonWithIcon = ({
@@ -8,12 +8,10 @@ const ButtonWithIcon = ({
   disabled = false,
   ...props
 }) => {
-  const prenetClasses = `${styles.borderWrapper} ${
-    disabled ? styles.disabled : ""
+  const prenetClasses = `borderWrapper ${disabled ? "disabled" : ""}`;
+  const classes = `button withIcon borderInner ${variant} ${size} ${
+    disabled ? "disabled" : ""
   }`;
-  const classes = `${styles.button} ${styles.withIcon} ${styles.borderInner} ${styles[variant]} ${
-    styles[size]
-  } ${disabled ? styles.disabled : ""}`;
 
   return (
     <div className={prenetClasses}>
